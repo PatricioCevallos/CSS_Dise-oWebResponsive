@@ -92,7 +92,6 @@ img.imgcenter{
     font-family:'Dancing Script',cursive;
     font-size: 1.5em;
     color: black;
-    /*text-shadow: 1px 1px #02000a;*/
     text-decoration: underline;
   }
 
@@ -105,13 +104,11 @@ img.imgcenter{
     font-family:'Dancing Script',cursive;
     font-size: 1.5em;
     color: black;
-    /*text-shadow: 1px 1px #02000a;*/
     text-decoration: underline;
   }
 
   #imagen1 a > img:hover {
     transform: rotate(10deg);
-/*    -ms-transform: rotate(10deg); */
     -webkit-transform: rotate(10deg);
     box-shadow:2px 2px 5px #82c3a6;
   	animation-duration: 3s;
@@ -142,6 +139,98 @@ img.imgcenter{
   .figur1, .figur2 {
     width: 50%;
   }
+
+  .contenedor3 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color:#C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+  	-webkit-border-radius: 0px 0px 10px 10px;
+  }
+   .contenedor3 > div >h1{
+    font-family:'Dancing Script',cursive;
+    font-size: 1.5em;
+  }
+
+   .contenedor3 > div >h3{
+    font-family:'Dancing Script',cursive;
+    font-size: 1em;
+  }
+
+  .contacto > h3 > a {
+    color: black;
+  }
+
+  #pie .contenedor3 > div > ul {
+    padding-left: 0px;
+    list-style-type:none;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  #pie .contenedor3 > div > ul > li{
+    font-family:'Dancing Script',cursive;
+    font-size: 14px;
+  }
+
+  .redes > ul > li > img {
+    width: 10%;
+    height: 10%;
+  }
+  .paisajes {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: #F7D988;
+    height: auto;
+  }
+
+  .paisajesuno {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: #F7D988;
+    height: auto;
+  }
+
+  #secciondos .paisajes > div > img{
+    display: block;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 250px;
+    box-shadow:2px 2px 5px #02010a;
+  }
+
+  #secciontres .paisajesuno > div > img{
+    display: block;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 250px;
+    box-shadow:2px 2px 5px #02010a;
+  }
+
+  .imagen1{
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+  }
+
+  .imagen2, .imagen4, .imagen6{
+    -webkit-filter:greyscale(100%);
+    filter:grayscale(100%);
+  }
+
+  .imagen3{
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+  }
+
 @keyframes deslizar{
   from{
       margin-top: 150%;
@@ -162,6 +251,14 @@ img.imgcenter{
 .index, .menu1, .menu2{
   width: 33%;
 }
+.contacto, .terminos, .redes, .derechos {
+  text-align: center;
+  width: 25%;
+}
+.p1, .p2, .p3, .p4, .p5, .p6 {
+  width: 33%;
+}
+
 @media (max-width: 900px) {
 	.figur1, .figur2 {
 		width: 100%;
@@ -176,7 +273,7 @@ img.imgcenter{
     width: 33%;
   }
   .contacto, .terminos, .redes, .derechos{
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
     width: 100%;
   }
@@ -185,7 +282,7 @@ img.imgcenter{
     width: 5%;
     height: 5%;
   }
-  .c1, .c2, .c3, .c4, .c5, .c6 {
+  .p1, .p2, .p3, .p4, .p5, .p6 {
   margin-top:20px;
   margin-bottom: 20px;
   margin-left: 20%;
